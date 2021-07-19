@@ -1,0 +1,387 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 280px;
+  z-index: 9997;
+  padding: 0 15px;
+  background: #040b04;
+  overflow-y: auto;
+}
+
+#header .profile img {
+  margin: 30px auto 5px;
+  display: block;
+  width: 130px;
+  border: 8px solid #2c2f3f;
+}
+
+#header .profile h1 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  -moz-text-align-last: center;
+  text-align-last: center;
+  font-family: "Poppins", sans-serif;
+}
+
+#header .profile .social-links a, footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #212431;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50px;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+}
+
+#header .profile .social-links a:hover, footer .social-links a:hover {
+  background: #149ddd;
+  color: #fff;
+  text-decoration: none;
+}
+
+#header .profile h1 a, #header .profile h1 a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+#main {
+  margin-left: 300px;
+}
+
+@media (max-width: 1199px) {
+  #header {
+    left: -300px;
+  }
+  #main {
+    margin-left: 0;
+  }
+}
+
+.nav-menu {
+  padding-top: 30px;
+}
+
+/*nav menu*/
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu > ul > li {
+ position: relative;
+ white-space: nowrap; 
+}
+
+.nav-menu a {
+  display: flex;
+  align-items: center;
+  color: #a8a9b4;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.nav-menu a svg {
+  color: #6f7180;
+  padding-right: 8px;
+}
+
+.nav-menu a:hover,
+.nav-menu .active > a,
+.nav-menu li:hover >a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-menu a:hover svg,
+.nav-menu .active > a svg,
+.nav-menu li:hover > a svg{
+  color: #149ddd;
+}
+
+/*begin of nightmare*/
+#fame {
+  width: 100%;
+  height: 100vh;
+  background: url("../imgs/cover.png") top center;
+  background-size: cover;
+}
+
+#fame::before {
+  content: "";
+  /*background: rgba(5, 13, 24, 0.3);*/
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#fame h1 {
+  margin: 0 0 10px 0;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+
+#fame p {
+  color: #fff;
+  margin-bottom: 50px;
+  font-size: 34px;
+  font-family: "Poppins", sans-serif;
+}
+
+#fame p span {
+  color: #fff;
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #149ddd;
+}
+
+.cursor {
+  display: inline-block;
+  width: 3px;
+  background-color: #fff;
+  margin-left: 0.1rem;
+  animation: blink is infinite;
+}
+
+@keyframes blink {
+  0% { background-color: #fff;}
+  49% { background-color: #fff;}
+  50% { background-color: transparent;}
+  99% { background-color: transparent;}
+  100% { background-color: #fff;}
+}
+
+@media (min-width: 1024px) {
+  #fame {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #fame h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #fame h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+/*General section*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+
+.section-title {
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #173b6c;
+}
+/*about content*/
+.about .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #173b6c
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  padding-bottom: 10px;
+}
+
+.about .content p:last-child {
+  margin-bottom: 0px;
+}
+
+/*skill*/
+.skills .progress {
+  height: 50px;
+  display: block;
+  background: none;
+}
+
+.skills .progress .skill {
+  padding: 10px 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+  background: #dce8f8;
+}
+
+.skills .progress-bar {
+  height: 10px; 
+  background-color: #149ddd;
+}
+
+#resume, #activity, #honor {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+/*activities*/
+.activity .icon-box {
+  margin-bottom: 20px;
+}
+
+.activity .icon {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  background: #149ddd;
+  border-radius: 50%;
+  border: 1px solid #149ddd;
+}
+
+.activity .icon svg {
+  color: #fff;
+}
+
+.activity .icon-box:hover .icon svg{
+  color: #149ddd;
+}
+
+.activity .icon-box:hover .icon {
+  background: #fff;
+}
+
+.activity .title {
+  margin-left:  80px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.activity .title a {
+  color: #343a40;
+}
+
+.activity .title a:hover {
+  color: #149ddd;
+}
+
+.activity .description {
+  margin-left: 80px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+/*honors*/
+#honor .cover {
+  border: 2px solid #212431;
+  border-radius: 30px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+#honor .progress {
+  border-radius: 50px;
+}
+
+/*Contact...*/
+.contact {
+  padding-bottom: 130px;
+}
+
+.contact .info {
+  padding: 30px;
+  background-size: #fff;
+}
+
+.contact .icon {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  background: #149ddd;
+  border-radius: 50%;
+  border: 1px solid #149ddd;
+}
+
+.contact .icon svg {
+  color: #fff;
+}
+
+.contact .icon-box:hover .icon svg{
+  color: #149ddd;
+}
+
+.contact .icon-box:hover .icon {
+  background: #fff;
+}
+
+.contact h4 {
+  margin-left:  80px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.contact #input {
+  margin-left:  80px;
+  margin-bottom: 30px;
+}
+
+.contact #sen {
+  font-size: 18px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #040b04;
+  font-size: 15px;
+}
+
+.contact a:hover {
+  color: #149ddd;
+}
+
